@@ -1,4 +1,5 @@
 :root {--linecolor:rgb(67, 66, 66)}
+:root {--bgcolor: rgb(245, 245, 245)}
 *{
     margin: 0;
     padding: 0;
@@ -11,27 +12,32 @@
     flex-direction: column;
     align-items: center;
     width: 100vw;
+    border: none;
+    box-shadow: 0px 0px 3px gray;
+    overflow: hidden;
 }
  img {
     width: 150px;
     border-radius: 50%;
-    background-color: var(--linecolor);
+    background-color: var(--bgcolor);
 }
 .header-info{
     display: flex;
     flex-direction: column;
     align-items: center;
     gap: 15px;
+    width: 100%;
     border-bottom: 1px solid var(--linecolor);
-    width: calc(100vw - 100px);
     padding-top: 30px;
+    background-color: navy;
 }
 .name {
     font-weight: bold;
     font-size: 20px;
+    color: var(--bgcolor);
 }
 .role {
-    color: var(--linecolor);
+    color: var(--bgcolor);
     font-size: 13px;
 }
 .icon{display: flex;
@@ -40,7 +46,7 @@
     margin-bottom: 15px;
 }
 .icon i{
-    color: var(--linecolor);
+    color: var(--bgcolor);
 }
 
 /* header end */
@@ -49,9 +55,10 @@
 
   .container{
     display: flex;
-    margin-top: 30px;
     justify-content: space-evenly;
     width: 100%;
+    padding-top:30px ;
+    background-color: rgb(245, 245, 245);
   }
   .item{
    display: flex;
@@ -64,12 +71,12 @@
     font-size: 20px;
   }
   .description {
-    color: var(--linecolor);
     font-size: 15px;
     display: flex;
     flex-direction: column;
     gap: 7px;
     margin: 10px 0px;
+    color: var(--linecolor);
   }
   .description a{
     text-decoration: none;
@@ -80,7 +87,7 @@
     color: black;
   }
 .line {
-    border-right: 1px solid var(--linecolor);
+    border-right: 1px solid navy ;
 }
 /* section end */
 
@@ -91,9 +98,9 @@
         flex-direction: column;
         align-items: center;
     }
-    .item {
-      border-bottom: 1px solid var(--linecolor);
-      padding-bottom: 15px ;
-      
-    }
+    .line {
+      border-bottom: 1px solid navy ;
+      width: 40%;
+  }
+   
 }
